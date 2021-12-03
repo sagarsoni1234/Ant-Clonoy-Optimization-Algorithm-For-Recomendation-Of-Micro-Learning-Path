@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane minHeight="800.0" minWidth="800.0" style="-fx-background-color: CC575F;" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.171" fx:controller="RunFrontend.FrontViewController">
+   <children>
+      <Label alignment="CENTER" prefHeight="43.0" prefWidth="801.0" style="-fx-background-color: lightgray;" text="Ant Colony Optimization Algorithm for Recomendation of Micro Learning Path">
+         <font>
+            <Font name="Comic Sans MS" size="20.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="283.0" fitWidth="241.0" layoutX="91.0" layoutY="135.0" pickOnBounds="true" smooth="false">
+         <image>
+            <Image url="@../../../../Pictures/Screenshots/Screenshot%20(2).png" />
+         </image>
+      </ImageView>
+      <Separator layoutX="54.0" layoutY="119.0" prefHeight="3.0" prefWidth="311.0" />
+      <Separator layoutX="51.0" layoutY="122.0" orientation="VERTICAL" prefHeight="311.0" prefWidth="0.0" />
+      <Separator layoutX="362.0" layoutY="121.0" orientation="VERTICAL" prefHeight="311.0" prefWidth="0.0" />
+      <Separator layoutX="57.0" layoutY="432.0" prefHeight="3.0" prefWidth="311.0" />
+      <Label layoutX="154.0" layoutY="43.0" prefHeight="64.0" prefWidth="494.0" text="Welcome to Ant Colony ">
+         <font>
+            <Font name="Comic Sans MS" size="38.0" />
+         </font>
+      </Label>
+      <Button layoutX="499.0" layoutY="711.0" mnemonicParsing="false" onAction="#exit" prefHeight="31.0" prefWidth="164.0" text="Exit" />
+      <Button layoutX="75.0" layoutY="505.0" mnemonicParsing="false" onAction="#ReccoLogin" prefHeight="31.0" prefWidth="110.0" text="Sign in" />
+      <Button layoutX="75.0" layoutY="561.0" mnemonicParsing="false" onAction="#ReccoPath" text="Select Course" />
+      <Button layoutX="75.0" layoutY="612.0" mnemonicParsing="false" onAction="#ReccoStudy" prefHeight="31.0" prefWidth="110.0" text="Start Study" />
+      <Button layoutX="416.0" layoutY="508.0" mnemonicParsing="false" onAction="#RandomLogin" prefHeight="31.0" prefWidth="110.0" text="Sign in" />
+      <Button layoutX="416.0" layoutY="564.0" mnemonicParsing="false" onAction="#RandomPathSelection" text="Select Course" />
+      <Button layoutX="416.0" layoutY="615.0" mnemonicParsing="false" onAction="#RandomStudy" prefHeight="31.0" prefWidth="110.0" text="Start Study" />
+      <Label layoutX="30.0" layoutY="459.0" text="Get Recommended path ">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Label>
+      <Label layoutX="368.0" layoutY="459.0" prefHeight="28.0" prefWidth="284.0" text="Select your Path Randomly">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Label>
+      <Label layoutX="39.0" layoutY="497.0" text="1.">
+         <font>
+            <Font size="32.0" />
+         </font>
+      </Label>
+      <Label layoutX="39.0" layoutY="553.0" text="2.">
+         <font>
+            <Font size="32.0" />
+         </font>
+      </Label>
+      <Label layoutX="39.0" layoutY="604.0" text="3.">
+         <font>
+            <Font size="32.0" />
+         </font>
+      </Label>
+      <Label layoutX="376.0" layoutY="503.0" text="1.">
+         <font>
+            <Font size="32.0" />
+         </font>
+      </Label>
+      <Label layoutX="376.0" layoutY="559.0" text="2.">
+         <font>
+            <Font size="32.0" />
+         </font>
+      </Label>
+      <Label layoutX="376.0" layoutY="610.0" text="3.">
+         <font>
+            <Font size="32.0" />
+         </font>
+      </Label>
+      <Separator layoutX="308.0" layoutY="459.0" orientation="VERTICAL" prefHeight="200.0" />
+      <Label layoutX="30.0" layoutY="659.0" text="By using Algorithm" />
+      <TextArea editable="false" layoutX="416.0" layoutY="142.0" prefHeight="270.0" prefWidth="331.0" promptText="Hey Students, ant colony " text="Ant Colony Optimization Algorithm for &#10;Recommendation of Micro Learning Path &#10;Provides the best Suitable path for new&#10;Students that is based on Previous &#10;Student Records!&#10;              If you want to go with algorithm&#10;Signin and get the best path for you from &#10;the bottom left corner and if you wnna &#10;continue by your own Select your &#10;Random path.">
+         <font>
+            <Font name="Comic Sans MS" size="16.0" />
+         </font>
+      </TextArea>
+   </children>
+</AnchorPane>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.web.WebView?>
+
+<AnchorPane minHeight="799.0" minWidth="800.0" prefHeight="799.0" prefWidth="1029.0" style="-fx-background-color: CC575F;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Ant_Recco.ReccoViewController">
+   <children>
+      <Label alignment="CENTER" prefHeight="51.0" prefWidth="1029.0" style="-fx-background-color: lightgray;" text="An Improved Ant Colony Optimization Algorithm for Micro Learning Path">
+         <font>
+            <Font name="Comic Sans MS" size="29.0" />
+         </font>
+      </Label>
+      <WebView fx:id="WebViewer" layoutX="24.0" layoutY="61.0" prefHeight="517.0" prefWidth="967.0" />
+      <Label layoutX="24.0" layoutY="567.0" prefHeight="57.0" prefWidth="323.0" text="Recommandation">
+         <font>
+            <Font size="26.0" />
+         </font>
+      </Label>
+      <Button layoutX="74.0" layoutY="677.0" mnemonicParsing="false" onAction="#start" prefHeight="31.0" prefWidth="70.0" text="start" />
+      <Button layoutX="167.0" layoutY="677.0" mnemonicParsing="false" onAction="#end" prefHeight="31.0" prefWidth="80.0" text="end" />
+      <Button layoutX="348.0" layoutY="677.0" mnemonicParsing="false" onAction="#start2" prefHeight="31.0" prefWidth="70.0" text="start" />
+      <Button layoutX="443.0" layoutY="677.0" mnemonicParsing="false" onAction="#end2" prefHeight="31.0" prefWidth="80.0" text="end" />
+      <Button layoutX="608.0" layoutY="677.0" mnemonicParsing="false" onAction="#start3" prefHeight="31.0" prefWidth="70.0" text="start" />
+      <Button layoutX="697.0" layoutY="677.0" mnemonicParsing="false" onAction="#end3" prefHeight="31.0" prefWidth="80.0" text="end" />
+      <Button layoutX="856.0" layoutY="677.0" mnemonicParsing="false" onAction="#start4" prefHeight="31.0" prefWidth="70.0" text="start" />
+      <Button layoutX="935.0" layoutY="677.0" mnemonicParsing="false" onAction="#end4" prefHeight="31.0" prefWidth="80.0" text="end" />
+      <Label layoutX="74.0" layoutY="717.0" prefHeight="57.0" prefWidth="323.0" text="Status">
+         <font>
+            <Font size="37.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtStatus" layoutX="206.0" layoutY="726.0" prefHeight="40.0" prefWidth="475.0" style="-fx-background-color: orange;" />
+      <Button layoutX="697.0" layoutY="726.0" mnemonicParsing="false" onAction="#go" prefHeight="40.0" prefWidth="49.0" text="go" />
+      <TextField fx:id="txtRecco" layoutX="24.0" layoutY="624.0" prefHeight="40.0" prefWidth="214.0" />
+      <TextField fx:id="txtRecco2" layoutX="298.0" layoutY="624.0" prefHeight="40.0" prefWidth="201.0" />
+      <TextField fx:id="txtRecco3" layoutX="556.0" layoutY="624.0" prefHeight="40.0" prefWidth="185.0" />
+      <TextField fx:id="txtRecco4" layoutX="806.0" layoutY="624.0" prefHeight="40.0" prefWidth="185.0" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.web.WebView?>
+
+<AnchorPane minHeight="874.0" minWidth="1177.0" prefHeight="876.0" prefWidth="1177.0" style="-fx-background-color: CC575F;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Ant_Pack3.Page3ViewController">
+   <children>
+      <Label layoutX="29.0" layoutY="40.0" />
+      <Label alignment="CENTER" layoutX="-5.0" prefHeight="43.0" prefWidth="1177.0" style="-fx-background-color: lightgray;" text="Ant Colony Optimization Algorithm for Recomendation of Micro Learning Path">
+         <font>
+            <Font name="Comic Sans MS" size="22.0" />
+         </font>
+      </Label>
+      <Label layoutX="10.0" layoutY="246.0" prefHeight="40.0" prefWidth="199.0" text="Start Your Modules">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <Button layoutX="48.0" layoutY="315.0" mnemonicParsing="false" onAction="#btn1" prefHeight="31.0" prefWidth="92.0" text="Module 1" />
+      <Button layoutX="48.0" layoutY="430.0" mnemonicParsing="false" onAction="#btn2" text="Module 2" />
+      <Button layoutX="48.0" layoutY="546.0" mnemonicParsing="false" onAction="#btn3" text="Module 3" />
+      <Button layoutX="46.0" layoutY="661.0" mnemonicParsing="false" onAction="#btn4" text="Module 4" />
+      <Separator layoutX="78.0" layoutY="347.0" orientation="VERTICAL" prefHeight="84.0" prefWidth="6.0" />
+      <Separator layoutX="78.0" layoutY="461.0" orientation="VERTICAL" prefHeight="84.0" prefWidth="6.0" />
+      <Separator layoutX="78.0" layoutY="577.0" orientation="VERTICAL" prefHeight="84.0" prefWidth="6.0" />
+      <Button layoutX="6.0" layoutY="776.0" mnemonicParsing="false" onAction="#btnExit" prefHeight="31.0" prefWidth="169.0" text="Exit" />
+      <Separator layoutX="81.0" layoutY="692.0" orientation="VERTICAL" prefHeight="84.0" prefWidth="6.0" />
+      <Label layoutX="6.0" layoutY="77.0" prefHeight="31.0" prefWidth="123.0" text="SAP ID:">
+         <font>
+            <Font size="29.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtSAP" layoutX="11.0" layoutY="141.0" prefHeight="31.0" prefWidth="238.0" />
+      <Label layoutX="15.0" layoutY="120.0" prefHeight="21.0" prefWidth="273.0" text="Sap Id must be same as previous " textFill="WHITE" />
+      <Button layoutX="37.0" layoutY="186.0" mnemonicParsing="false" onAction="#doSubmit" prefHeight="31.0" prefWidth="154.0" text="Submit" />
+      <Separator layoutX="238.0" layoutY="179.0" orientation="VERTICAL" prefHeight="200.0" />
+      <Separator layoutX="235.0" layoutY="425.0" orientation="VERTICAL" prefHeight="200.0" />
+      <Separator layoutX="235.0" layoutY="663.0" orientation="VERTICAL" prefHeight="200.0" />
+      <Separator layoutX="228.0" layoutY="201.0" orientation="VERTICAL" prefHeight="145.0" prefWidth="6.0" />
+      <Separator layoutX="225.0" layoutY="444.0" orientation="VERTICAL" prefHeight="145.0" prefWidth="6.0" />
+      <Separator layoutX="222.0" layoutY="683.0" orientation="VERTICAL" prefHeight="145.0" prefWidth="6.0" />
+      <WebView fx:id="webDisplay" layoutX="256.0" layoutY="54.0" prefHeight="821.0" prefWidth="917.0" />
+      <Separator layoutX="256.0" layoutY="63.0" prefHeight="9.0" prefWidth="917.0" style="-fx-background-color: BLACK;" />
+      <Separator layoutX="249.0" layoutY="44.0" orientation="VERTICAL" prefHeight="833.0" prefWidth="6.0" style="-fx-background-color: BLACK;" />
+      <Label layoutX="253.0" layoutY="43.0" prefHeight="23.0" prefWidth="917.0" style="-fx-background-color: orange;" text="Read Your Modules and start the tests.">
+         <font>
+            <Font name="Consolas" size="20.0" />
+         </font>
+      </Label>
+      <Separator layoutX="1167.0" layoutY="-28.0" orientation="VERTICAL" prefHeight="905.0" prefWidth="6.0" style="-fx-background-color: black;" />
+   </children>
+</AnchorPane>

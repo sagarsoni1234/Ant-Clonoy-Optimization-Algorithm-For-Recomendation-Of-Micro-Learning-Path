@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane minHeight="800.0" minWidth="800.0" prefHeight="715.0" prefWidth="800.0" style="-fx-background-color: CC575F;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Ant_Pack2.Page2ViewController">
+   <children>
+      <Label alignment="CENTER" layoutY="1.0" prefHeight="69.0" prefWidth="800.0" style="-fx-background-color: lightgray;" text="Ant Colony Optimization Algorithm for Recomendation of Micro Learning Path">
+         <font>
+            <Font name="Comic Sans MS" size="22.0" />
+         </font>
+      </Label>
+      <Label layoutX="-2.0" layoutY="765.0" prefHeight="21.0" prefWidth="800.0" style="-fx-background-color: lightgray;" />
+      <Label layoutX="10.0" layoutY="62.0" prefHeight="91.0" prefWidth="691.0" text="Select your 5 Micro Learning Units">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="Combo1" editable="true" layoutX="82.0" layoutY="148.0" prefWidth="150.0" promptText="Micro Unit-1" />
+      <ComboBox fx:id="Combo2" editable="true" layoutX="82.0" layoutY="209.0" prefWidth="150.0" promptText="Micro Unit-2" />
+      <ComboBox fx:id="Combo3" editable="true" layoutX="82.0" layoutY="280.0" prefWidth="150.0" promptText="Micro Unit-3" />
+      <ComboBox fx:id="Combo4" editable="true" layoutX="82.0" layoutY="350.0" prefWidth="150.0" promptText="Micro Unit-4" />
+      <Label layoutX="36.0" layoutY="144.0" prefHeight="21.0" prefWidth="46.0" text="1.">
+         <font>
+            <Font size="27.0" />
+         </font>
+      </Label>
+      <Label layoutX="36.0" layoutY="205.0" prefHeight="21.0" prefWidth="46.0" text="2.">
+         <font>
+            <Font size="27.0" />
+         </font>
+      </Label>
+      <Label layoutX="36.0" layoutY="276.0" prefHeight="21.0" prefWidth="46.0" text="3.">
+         <font>
+            <Font size="27.0" />
+         </font>
+      </Label>
+      <Label layoutX="36.0" layoutY="346.0" prefHeight="21.0" prefWidth="46.0" text="4.">
+         <font>
+            <Font size="27.0" />
+         </font>
+      </Label>
+      <Separator layoutX="257.0" layoutY="153.0" orientation="VERTICAL" prefHeight="200.0" prefWidth="6.0" />
+      <Label alignment="TOP_LEFT" layoutX="264.0" layoutY="123.0" prefHeight="316.0" prefWidth="534.0" style="-fx-background-color: white;" text="  Hey Students,">
+         <font>
+            <Font size="31.0" />
+         </font>
+      </Label>
+      <Slider layoutX="782.0" layoutY="52.0" orientation="VERTICAL" prefHeight="112.0" prefWidth="18.0" />
+      <TextArea editable="false" layoutX="275.0" layoutY="168.0" prefHeight="226.0" prefWidth="519.0" text="Lets Decide What you should Study to acheive your Learning Goal.&#10;So,&#10;1. You need to Select 4 Micro Learning Units.&#10;2. Based On previous Students Learniing Goals and their Results. We will recommend&#10;    you the best learning path.&#10;3. In Each Unit You will see the Learning Content and A quiz.&#10;4. To proceed further, Or to move to next Unit you have to Score more then 60%&#10;    marks!&#10;5. Note: Learning time for Each Module is 30 minutes." />
+      <Button layoutX="63.0" layoutY="636.0" mnemonicParsing="false" onAction="#doSubmit" text="Submit">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Button>
+      <Button layoutX="208.0" layoutY="639.0" mnemonicParsing="false" onAction="#doClear" text="Clear">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Button>
+      <Label layoutX="14.0" layoutY="498.0" prefHeight="91.0" prefWidth="691.0" text="Enter Your Sap id:">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="236.0" layoutY="533.0" prefHeight="28.0" prefWidth="527.0" text="(**SAP id Must Be Same As you have Entered in login Page.**)" textFill="#fff2f2">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtSAP" layoutX="41.0" layoutY="574.0" prefHeight="31.0" prefWidth="319.0" />
+      <Separator layoutX="147.0" layoutY="471.0" prefHeight="7.0" prefWidth="546.0" />
+      <Separator layoutX="320.0" layoutY="495.0" prefWidth="200.0" />
+   </children>
+</AnchorPane>

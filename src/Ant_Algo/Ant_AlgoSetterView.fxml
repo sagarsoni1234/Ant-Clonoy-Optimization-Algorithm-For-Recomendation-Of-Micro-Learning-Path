@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleButton?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.web.WebView?>
+
+<AnchorPane minHeight="800.0" minWidth="1136.0" prefHeight="800.0" prefWidth="1136.0" style="-fx-background-color: CC575F;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Ant_Algo.Ant_AlgoSetterViewController">
+   <children>
+      <Label alignment="CENTER" layoutX="-6.0" prefHeight="51.0" prefWidth="1144.0" style="-fx-background-color: lightgray;" text="An Improved Ant Colony Optimization Algorithm for Micro Learning Path">
+         <font>
+            <Font name="Comic Sans MS" size="21.0" />
+         </font>
+      </Label>
+      <WebView fx:id="WEBui" layoutX="310.0" layoutY="60.0" prefHeight="683.0" prefWidth="784.0" />
+      <Label layoutX="658.0" layoutY="110.0" text="BACKEND" />
+      <Button layoutX="26.0" layoutY="228.0" mnemonicParsing="false" onAction="#Action2" text="Download CSV" />
+      <Button layoutX="26.0" layoutY="189.0" mnemonicParsing="false" onAction="#Action1" prefHeight="31.0" prefWidth="119.0" text="Browse CSV" />
+      <Button layoutX="26.0" layoutY="267.0" mnemonicParsing="false" onAction="#Action3" prefHeight="31.0" prefWidth="119.0" text="Insert CSV" />
+      <Button layoutX="242.0" layoutY="110.0" mnemonicParsing="false" onAction="#DoSaveSAP" prefHeight="31.0" prefWidth="55.0" text="Go" />
+      <TextField fx:id="SAPid" layoutX="20.0" layoutY="110.0" prefHeight="31.0" prefWidth="200.0" />
+      <Label layoutX="20.0" layoutY="69.0" prefHeight="51.0" prefWidth="119.0" text="SAP id:">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Separator layoutX="147.0" layoutY="203.0" prefHeight="3.0" prefWidth="163.0" style="-fx-background-color: blue;" />
+      <Separator layoutX="147.0" layoutY="242.0" prefHeight="3.0" prefWidth="163.0" style="-fx-background-color: blue;" />
+      <Separator layoutX="147.0" layoutY="281.0" prefHeight="3.0" prefWidth="163.0" style="-fx-background-color: blue;" />
+      <Separator layoutX="1116.0" layoutY="60.0" orientation="VERTICAL" prefHeight="200.0" />
+      <Separator layoutX="1119.0" layoutY="281.0" orientation="VERTICAL" prefHeight="200.0" />
+      <Separator layoutX="1119.0" layoutY="522.0" orientation="VERTICAL" prefHeight="200.0" />
+      <Separator layoutX="1118.0" layoutY="86.0" orientation="VERTICAL" prefHeight="134.0" prefWidth="15.0" />
+      <Separator layoutX="1122.0" layoutY="314.0" orientation="VERTICAL" prefHeight="134.0" prefWidth="15.0" />
+      <Separator layoutX="1122.0" layoutY="541.0" orientation="VERTICAL" prefHeight="134.0" prefWidth="15.0" />
+      <Label layoutX="9.0" layoutY="339.0" prefHeight="51.0" prefWidth="200.0" text="Pheromone :">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <TextField fx:id="ph1" layoutX="17.0" layoutY="389.0" prefHeight="31.0" prefWidth="98.0" />
+      <TextField fx:id="ph2" layoutX="170.0" layoutY="389.0" prefHeight="31.0" prefWidth="119.0" />
+      <TextField fx:id="ph3" layoutX="168.0" layoutY="442.0" prefHeight="31.0" prefWidth="119.0" />
+      <TextField fx:id="ph4" layoutX="17.0" layoutY="443.0" prefHeight="31.0" prefWidth="98.0" />
+      <Separator layoutX="114.0" layoutY="397.0" prefHeight="11.0" prefWidth="61.0" />
+      <Separator layoutX="284.0" layoutY="389.0" prefHeight="31.0" prefWidth="21.0" />
+      <Separator layoutX="303.0" layoutY="404.0" orientation="VERTICAL" prefHeight="62.0" prefWidth="6.0" />
+      <Label layoutX="150.0" layoutY="369.0" prefHeight="21.0" prefWidth="61.0" text="&gt;">
+         <font>
+            <Font size="40.0" />
+         </font>
+      </Label>
+      <Separator layoutX="122.0" layoutY="437.0" prefHeight="51.0" prefWidth="48.0" />
+      <Separator layoutX="284.0" layoutY="451.0" prefHeight="31.0" prefWidth="21.0" />
+      <Label layoutX="280.0" layoutY="436.0" prefHeight="51.0" prefWidth="61.0" text="&lt;">
+         <font>
+            <Font size="40.0" />
+         </font>
+      </Label>
+      <Label layoutX="110.0" layoutY="431.0" prefHeight="51.0" prefWidth="61.0" text="&lt;">
+         <font>
+            <Font size="40.0" />
+         </font>
+      </Label>
+      <Label layoutX="15.0" layoutY="522.0" prefHeight="51.0" prefWidth="200.0" text="Suitable fkt">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <ToggleButton layoutX="139.0" layoutY="532.0" mnemonicParsing="false" onAction="#getResult" prefHeight="31.0" prefWidth="107.0" text="get Fkt" />
+      <Separator layoutX="244.0" layoutY="546.0" prefHeight="3.0" prefWidth="66.0" />
+      <TextField fx:id="fkt" layoutX="231.0" layoutY="582.0" prefHeight="51.0" prefWidth="66.0" style="-fx-background-color: ORANGE;" />
+      <TextField fx:id="fktSAP" layoutX="4.0" layoutY="582.0" prefHeight="51.0" prefWidth="218.0" />
+      <Button layoutX="19.0" layoutY="664.0" mnemonicParsing="false" onAction="#Action4" prefHeight="23.0" prefWidth="119.0" style="-fx-background-color: red;" text="Clear Chache" />
+      <Separator layoutX="138.0" layoutY="678.0" prefHeight="3.0" prefWidth="175.0" style="-fx-background-color: red;" />
+      <Button layoutX="39.0" layoutY="711.0" mnemonicParsing="false" onAction="#exiter" prefHeight="31.0" prefWidth="259.0" text="EXIT" />
+   </children>
+</AnchorPane>
